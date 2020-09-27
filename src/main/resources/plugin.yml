@@ -1,0 +1,29 @@
+name: VoteReboot
+version: Alpha-2.3
+main: top.jiajiaxd.www.votereboot.VoteReboot
+commands:
+  vote:
+    description: 发起一次重启投票
+    usage: /vote
+    permission: VoteReboot.vote
+    permission-message: §2[VoteReboot]§c 你需要VoteReboot.vote权限，请联系服务器管理员
+  voteaccept:
+    description: 同意重启
+    usage: /voteaccept
+    permission: VoteReboot.accept
+    permission-message: §2[VoteReboot]§c 你需要VoteReboot.accept权限，请联系服务器管理员
+  votecancel:
+    description: 取消当前所有操作，可取消重启、投票等功能
+    usage: /votecancel
+    permission: VoteReboot.cancel
+    permission-message: §2[VoteReboot]§c 你需要VoteReboot.cancel权限，请联系服务器管理员
+  votereboot:
+    description: 插件菜单
+    usage: /votereboot
+permissions:
+  VoteReboot.vote:
+    default: true
+  VoteReboot.accept:
+    default: true
+  VoteReboot.cancel:
+    op: true

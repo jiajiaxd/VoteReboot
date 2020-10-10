@@ -10,7 +10,7 @@ ConfigVersion: 1.1
 checkupdate: true
 
 #插件聊天栏前缀
-prefix: §b[VoteRebbot]
+prefix: §b[VoteReboot]
 
 #是否启用VoteReboot。若为false,插件将会自动关闭。
 EnablePlugin: true

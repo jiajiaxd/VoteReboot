@@ -26,6 +26,6 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         # Artifact name
-        name: VoteReboot.jar
+        name: VoteReboot_latest.jar
         # A file, directory or wildcard pattern that describes what to upload
-        path: "output"
+        path: "VoteReboot.jar"

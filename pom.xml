@@ -18,6 +18,7 @@
 
     <build>
         <defaultGoal>clean package</defaultGoal>
+        <finalName>VoteReboot.jar</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

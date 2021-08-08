@@ -60,6 +60,7 @@ public class VoteReboot extends JavaPlugin {
             sendCMessage("插件已经关闭。如果需要启动，请在config.yml内将EnablePlugin设置为true。");
             Bukkit.getPluginManager().disablePlugin(this);
         }
+        /*
         if(getCS("checkupdate").equals("true")) {
             new BukkitRunnable() {
                 @Override
@@ -95,6 +96,7 @@ public class VoteReboot extends JavaPlugin {
                 }
             }.runTaskAsynchronously(VoteReboot.me);
         }
+        */
         if (!cancel && !reload) Bukkit.getPluginManager().registerEvents(new Notice(), this);
         prefix = getCS("prefix");
         if (getCS("IPCheck").equals("true")) ipcheck = true;

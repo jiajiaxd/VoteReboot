@@ -323,7 +323,7 @@ public class VoteReboot extends JavaPlugin {
                             public void run() {
                                 if(isVoting){
                                     vs--;
-                                    if(vs==0){
+                                    if(vs<=0){
                                         sendGlobalMessage("本次重启投票已经过期");
                                         isVoting = false;
                                         cancel();

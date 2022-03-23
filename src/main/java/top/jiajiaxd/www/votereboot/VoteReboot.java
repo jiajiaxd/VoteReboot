@@ -325,6 +325,7 @@ public class VoteReboot extends JavaPlugin {
                                     vs--;
                                     if(vs==0){
                                         sendGlobalMessage("本次重启投票已经过期");
+                                        isVoting = false;
                                         cancel();
                                         this.cancel();
                                     }
@@ -351,7 +352,7 @@ public class VoteReboot extends JavaPlugin {
             a = true;
             cancel();
             sendPlayerMessage(sender, "已经取消当前所有操作");
-            if(isVoting) sendGlobalMessage("本次投票被管理员结束！");
+            if(isVoting) {sendGlobalMessage("本次投票被管理员结束！");isVoting=false;}
         }
         if (label.equalsIgnoreCase("votereboot")){
             if(args.length>0 && sender.isOp()) {
